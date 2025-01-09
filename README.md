@@ -30,6 +30,20 @@ python main.py [-h] [-v] [-s] [-o OUTPUT] [-l LANGUAGE] [url ...]
 ```
 
 ## Example:
+
 ```sh
 python main.py -o "~/Desktop" "<song/playlist URL here>"
 ```
+
+<br>
+
+## Executable
+
+You can create an executable by using the following command:
+```sh
+pyinstaller --add-data "translations:translations" main.py
+```
+
+It will be created by default in `./dist/main/main` in Linux/Mac or `.\dist\main\main.exe` in Windows.
+
+##### Note: adding the `--onefile` argument to pyinstaller tends to make running the executable very slow.
