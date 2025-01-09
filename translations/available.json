@@ -1,0 +1,10 @@
+[
+    {
+        "language": "RO",
+        "countries": ["RO", "MD"]
+    },
+    {
+        "language": "EN",
+        "countries": ["US", "GB", "CA", "AU", "NZ", "IE"]
+    }
+]

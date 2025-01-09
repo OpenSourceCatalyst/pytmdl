@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+.env
+env/
+logs/
+*.spec
+build/
+dist/
+*.iss
+Output/
