@@ -23,7 +23,8 @@ class YTSong:
             search_max_display=15,
             language="EN",
             country="US",
-            lang_dict=None
+            lang_dict=None,
+            on_progress=on_progress
             ):
         """
         Constructs a `YTSong` object.
@@ -43,6 +44,7 @@ class YTSong:
                 Defaults to "US" (United States).
             lang_dict (dict, optional): A dictionary mapping languages to their codes. 
                 If not provided, the dictionary matching the default language will be used.
+            on_progress (func): The progress callback function.
 
         Raises:
             SongUnavailable: If the song/video cannot be found at the given URL
